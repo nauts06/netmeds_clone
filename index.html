@@ -1,16 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/f70b78cd27.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #main{
+            height: 165px;
+            background-color: #32aeb1;
+            display: flex;
+            margin-top: -8px;
+            margin-left: -8px;
+           /* width: 1364px; */
+
+        }
+        #main>div{
+            padding: 25px;
+
+        }
+        #main>#input{
+            margin-left: 26px;
+            height: 22px;
+            width: 600px;
+            background-color: white;
+            margin-top: 18px;
+            border-radius: 6px;
+            padding-top: 0px;
+         
+        }
+        #input{
+            display: flex;
+            /*             */
+        }
+        #input>div{
+            display: flex;
+        }
+        
+        input::placeholder{
+            font-family: inherit;
+            font-size: inherit;
+        }
+        #first{
+          
+            height: 35px;
+            width: 80px;
+            margin-top: 4px;
+            margin-right: 5px;
+        }
+        #sec>input{
+            width: 400px;
+            margin-left: 15px;
+            height:35px ;
+            margin-top:5px;
+            border: white; 
+        }
+        #first>h6{
+            color:#32aeb1;
+            font-family: sans-serif  ;
+            font-size: 14px;
+            margin-top: 10px;
+            
+        }
+        #f{
+           
+            height: 35px;
+            width:65px;
+            margin-top: 1px;
+            
+            margin-left:7px ;
+        }
+        #f>p{
+            color: grey;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        #se{
+            color:grey;
+            border: white;
+        }
+        #last{
+            margin-top: 8px;
+            height: 25px;
+            border: solid 1px grey;
+        }
+        #upload{
+            color: white;
+            
+        }
+
+        /* footer */
+
+        #footer{
+            border: solid 1px black;
+            height: 480px;
+            width: 90%;
+            margin-left: 30px;
+        }
+        #infoo{
+            display: flex;
+            
+            height: 140px;
+        }
+        #img{
+            margin-top:40px ;
+           
+            width: 250px;
+            height: 80px;
+        }
+        #text{
+            margin-top: 40px;
+            
+            width: 700px;
+            height: 80px;
+            margin-left: 25px;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: sans-serif ;
+            color: #0B121980
+        }
+        #hr{
+            margin-top: 20px;
+        }
+        .h5{
+            font-family: sans-serif;
+        }
+        #one{
+            border: solid 1px black;
+            height: 70%;
+            display: flex;
+        }
+        #one>div{
+            width: 400px;
+            border: solid 1px black;
+        }
+    </style>
 </head>
 <body>
     
-    <p>nauts world</p>
+   <div id="main">
+       <div>
+           <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
+       </div>
+       <div id="input">
+           <div>
+               <div id="f">
+                   <p>Deliver to</p>
+               </div>
+               <div  id="first">
+                <h6>110002
+                    <select id="se">
+                        <option value="">
+                            <p></p>
+                        </option>
+                    </select>
+                </h6>
+               </div>
+               <div id="last">
+                   
+               </div>
+           </div>
+           <div id="sec">
+            <input placeholder="Search for medicine & wellness products....." type="search">
+           </div>
+       </div>
 
-    <p>cnhidvi</p>
+
+       
+       <div id="upload">
+        <i class="fa-solid fa-palette"></i>
+           <p>kkm</p>
+           
+       </div>
+
+   </div>
+
+
+
+                              <!-- last part footer -->
+
+
+<div id="footer">
+    <div id="infoo">
+        <div id="img">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+        </div>
+        <div id="text">
+            <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+        </div>
+    </div>
+
+    <hr id="hr">
+
+    
+    <div id="one">
+        <div>
+            <h5 class="h5">COMPANY</h5>
+
+            <a href="">About Netmeds</a>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</div>
+
 
 </body>
 </html>
