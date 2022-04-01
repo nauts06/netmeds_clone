@@ -454,6 +454,16 @@ oneData.map(function(elem){
        
        bo.append(bt)
 
+    function addToCart(data)
+    {
+      console.log(data);
+      data.quant = 1;
+      cartArr.push(data);
+      console.log(cartArr);
+      localStorage.setItem('CartItems',JSON.stringify(cartArr));
+      alert("item added to cart");
+    }
+
        
 
    
