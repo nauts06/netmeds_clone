@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f70b78cd27.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./headerCss.css">
+    <style>
+        #actual{
+            display: flex;
+            gap: 20px;
+          background-color: #f3f3f3;
+        }
+        #allProduct{
+            height: auto;
+            width:80%;
+            /* border: solid 1px; */
+            border-radius: 12px;
+            background-color: white;
+         
+            
+        }
+        #left{
+            /* border: solid 1px ; */
+            height: auto;
+            width: 20%;
+            border-radius: 12px;
+            background-color: white;
+        }
+        
+        #con{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 15px 15px;
+            background-color: white;
+            padding: 20px;
+        }
+        #con>div{
+            border-radius: 12px;
+            border: solid 1px grey;
+            padding: 20px;
+            background-color: white;
+        }
+        #con>div>p{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #151b39;
+            margin: 4px 0 5px;
+            font-weight: 700;
+        }
+        #con>div>i{
+            font-size: 12px;
+            font-family: sans-serif;
+            color: grey;
+            
+        }
+        #con>div>s{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: grey;
+        }
+        #CovidEssentials{
+            height: 120px;
+            width: 96%;
+            background-color: #DFF8FF;
+            padding: 25px;
+            border-radius: 12px 12px 0px 0px;
+        }
+        #CovidEssentials>p{
+            font-family: sans-serif;
+            font-size: 26px;
+        }
+        #butt{
+       color: white;
+       background-color:#24aeb1 ;
+       padding:15px 80px 15px 15px;
+       font-size: 14px;
+       font-weight: 700;
+       text-align: center;
+       border: solid 1px white;
+       cursor: pointer;
+       margin-top: 12px;
+    
+        }
+
+
+        
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="mm">
+           <a href="index.html"> <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt=""></a>
+        </div>
+        <div id="input" style="height:28px;">
+            <div>
+                <div id="f">
+                    <p>Deliver to</p>
+                </div>
+                <div  id="first">
+                 <h6>110002
+                     <select id="se">
+                         <option value="">
+                             <p></p>
+                         </option>
+                     </select>
+                 </h6>
+                </div>
+                <div id="last">
+                    
+                </div>
+            </div>
+            <div id="sec">
+             <input placeholder="Search for medicine & wellness products....." type="search">
+            </div>
+        </div>
+ 
+ 
+        
+        <div id="upload" style="margin-top: 18px;">
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-upload" style="font-size:25px;color:white"></i> 
+                 </div>
+                 <div >
+                     <p style="margin:5px;">Upload</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-shopping-cart" style="font-size:25px;color:white"></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Cart</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class='far fa-address-book' style='font-size:25px;color:white'></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Sign in/ Sign up</p>
+                 </div>
+             </div>
+               
+             
+            
+        </div>
+     </div>
+     <div id="second">
+         <div>
+             <div class="rad">
+                 <i class='fas fa-pills' style='font-size:30px;color:white'></i>
+             </div>
+             <div>
+                 <p>Medicine</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='far fa-hospital' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Wellness</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-bong' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Lab Tests</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-cocktail' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Beauty</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-hospital-alt' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Health Corner</p>
+             </div>
+         </div>
+     </div>
+               
+     <!-- main
+            -->
+ 
+ 
+                          <!-- navbar -->
+ 
+    <div id="he" style="margin-top:20px;">
+        <div>
+            <a href="covid.html">COVID Essentials</a>
+        </div>
+        <div>
+            <a href="Diabetes.html">Diabetes</a>
+        </div>
+        <div>
+         <a href="Eyewear.html">Eyewear</a>
+        </div>
+        <div>
+           <a href="Ayush.html">Ayush</a>
+        </div>
+        <div>
+             <a href="">Fitness</a>
+        </div>
+        <div>
+               <a href="">Mom & Baby</a>
+        </div>
+        <div>
+              <a href="">Devices</a>
+        </div>
+        <div>
+                <a href="">Surgicals</a>
+        </div>
+        <div>
+               <a href="">Sexual Wellness</a>
+        </div>
+        <div>
+              <a href="">Treatment</a>
+        </div>
+    </div>
+          <!--------********* header *********--------->
+
+
+
+
+    <div id="actual">
+
+        <!-- left div     -->
+
+        <div id="left" >
+            <div></div>
+        </div>
+
+        <!-- right div -->
+
+       <div id="allProduct">
+           <div id="CovidEssentials">
+               <p>Covid Essentials</p>
+           </div>
+    
+        <div id="con"></div>
+       </div>
+    </div>
+
+
+    <!-- footer -->
+
+
+    <div id="footer">
+        <div id="infoo">
+            <div id="img">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+            </div>
+            <div id="text">
+                <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+            </div>
+        </div>
+    
+        <hr id="hr">
+    
+        
+        <div id="one">
+            <div>
+                <h5 class="h5">COMPANY</h5>
+    
+                <p>About Netmeds</p>
+                <p>Customer Speak</p>
+                <p>In the news</p>
+                <p>Career</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Fees and Payments Policy</p>
+                <p>Shipping and Delivery Policy</p>
+                <p>Return, Refund and Cancellation Policy</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <h5 class="h5">SHOPPING</h5>
+    
+                <p>Browse by A-Z</p>
+                <p>Browse by Manufacturers</p>
+                <p>Health Articles</p>
+                <p>Offers / Coupons</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <h5 class="h5">SOCIAL</h5>
+    
+                <p>Patients Alike</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+                <p>Youtube</p>
+                <p>Refer & Earn</p>
+            </div>
+            <div id="or">
+                <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+    
+                <div id="news">
+                    <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+    
+                    <input id="inp" type="text" placeholder="Enter your email address">
+                    <BUtton><i class="fa-solid fa-arrow-right-long"></i></BUtton>
+                    <hr>
+                    <div id="in">
+                        <div>
+                            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <hr id="la">
+    
+        <div id="as">
+            <div>
+                <p>Medicine</p>
+            </div>
+            <div>
+                <p>Wellness</p>
+            </div>
+            <div>
+                <p>Lab Tests</p>
+            </div>
+            <div>
+                <p>Beauty</p>
+            </div>
+            <div>
+                <p>Copyright© 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+ var oneData=[
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/958677/shake_handz_e_alcohol_hand_rub_with_flip_cap_500_ml_0_1.jpg",
+        name: "Shake HandZ-E Alcohol Hand Rub With Flip Cap 500 ml",
+        ii : "Mkt: Inventz Lifescience Pvt Ltd",
+        price: 100.00 ,
+        MRP:250.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/953905/shake_handz_e_hand_rub_5_litre_0_0.jpg",
+        name: "Shake HandZ-E Alcohol Hand Rub 5 litre",
+        ii : "Mkt: Inventz Lifescience Pvt Ltd",
+        price: 575.00 ,
+        MRP:2500.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/958409/status_n95_face_mask_white_pack_of_20_0_1.jpg",
+        name: "Status N95 Face Mask - White(Pack of 20)",
+        ii : "Mkt: Chinar Forge Ltd",
+        price: 200.90 ,
+        MRP:980.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/912261/ciphands_daily_surface_disinfectant_spray_75_ml_0_3.jpg",
+        name: "Ciphands Daily Surface Disinfectant Spray 75",
+        ii : "Mkt:Cipla ltd(Otc)",
+        price: 94.05 ,
+        MRP:99.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/915906/maxirich_multivitamin_and_minerals_softgels_10s_0_0.jpg",
+        name: "Maxirich Multivitamins and Minerals Softgel",
+        ii : "Mkt:Cipla ltd(Otc)",
+        price: 60.50,
+        MRP:110.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/920731/ourdaily_vitamin_c_zinc_tablet_15s_0_2.jpg",
+        name: "Ourdaily Vitamin C & Zinc Tablets 15's",
+        ii : "Mkt: Inventz Lifescience Pvt Ltd",
+        price: 46.92,
+        MRP:659.78,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/915643/zebronics_fingertip_pulse_oximeter_zeb_fpo500_0_0.jpg",
+        name: "Zebranoics Fingertip Pulse Oximeter",
+        ii : "Mkt: Inventz Lifescience Pvt Ltd",
+        price: 659.78,
+        MRP:2999.00,
+
+    },
+    {
+        img : "https://www.netmeds.com/images/product-v1/150x150/985297/univen_powder_free_nitrile_gloves_m_100s_0_1.jpg",
+        name: "UnoVen Powder Free Nitrile Gloves(M)100's",
+        ii : "Mkt: Inventz Lifescience Pvt Ltd",
+        price: 800.64,
+        MRP:1400.00,
+
+    },
+]
+
+
+oneData.map(function(elem){
+    var box = document.createElement("div")
+    var image = document.createElement("img")
+    image.src=elem.img
+    var title = document.createElement("p")
+    title.innerText =elem.name
+    var tit = document.createElement("i")
+    tit.innerText =elem.ii
+    var pr = document.createElement("p")
+    pr.style.color="grey"
+    pr.innerText="Best price* Rs."+ +elem.price
+    var mr = document.createElement("s")
+       mr.innerText="MRP Rs."+ +elem.MRP
+       mr.style.textDecoration=" line-through"
+       
+       var bo = document.createElement("div")
+       var bt = document.createElement("button")
+       bt.innerText="ADD TO CART"
+       bt.id="butt"
+       
+       bo.append(bt)
+
+       
+
+   
+   
+   
+       box.append(image,title,tit,pr,mr,bo)
+       document.getElementById("con").append(box)
+
+
+
+})
+
+</script>

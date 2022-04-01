@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f70b78cd27.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./headerCss.css">
+    <style>
+    
+        #actual{
+            display: flex;
+            gap: 20px;
+          background-color: #f3f3f3;
+        }
+        #allProduct{
+            height: auto;
+            width:80%;
+            /* border: solid 1px; */
+            border-radius: 12px;
+            background-color: white;
+         
+            
+        }
+        #left{
+            /* border: solid 1px ; */
+            height: auto;
+            width: 20%;
+            border-radius: 12px;
+            background-color: white;
+        }
+        
+        #con{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 15px 15px;
+            background-color: white;
+            padding: 20px;
+        }
+        #con>div{
+            border-radius: 12px;
+            border: solid 1px grey;
+            padding: 20px;
+            background-color: white;
+        }
+        #con>div>p{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #151b39;
+            margin: 4px 0 5px;
+            font-weight: 700;
+        }
+        #con>div>i{
+            font-size: 12px;
+            font-family: sans-serif;
+            color: grey;
+            
+        }
+        #con>div>s{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: grey;
+        }
+        #CovidEssentials{
+            height: auto;
+            width: auto;
+            border-radius: 12px 12px 0px 0px;
+        }
+        #CovidEssentials>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        #butt{
+       color: white;
+       background-color:#24aeb1 ;
+       padding:15px 80px 15px 15px;
+       font-size: 14px;
+       font-weight: 700;
+       text-align: center;
+       border: solid 1px white;
+       cursor: pointer;
+       margin-top: 12px;
+    
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="mm">
+            <a href="index.html"> <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt=""></a>
+        </div>
+        <div id="input" style="height:28px;">
+            <div>
+                <div id="f">
+                    <p>Deliver to</p>
+                </div>
+                <div  id="first">
+                 <h6>110002
+                     <select id="se">
+                         <option value="">
+                             <p></p>
+                         </option>
+                     </select>
+                 </h6>
+                </div>
+                <div id="last">
+                    
+                </div>
+            </div>
+            <div id="sec">
+             <input placeholder="Search for medicine & wellness products....." type="search">
+            </div>
+        </div>
+ 
+ 
+        
+        <div id="upload" style="margin-top: 18px;">
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-upload" style="font-size:25px;color:white"></i> 
+                 </div>
+                 <div >
+                     <p style="margin:5px;">Upload</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-shopping-cart" style="font-size:25px;color:white"></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Cart</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class='far fa-address-book' style='font-size:25px;color:white'></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Sign in/ Sign up</p>
+                 </div>
+             </div>
+               
+             
+            
+        </div>
+     </div>
+     <div id="second">
+         <div>
+             <div class="rad">
+                 <i class='fas fa-pills' style='font-size:30px;color:white'></i>
+             </div>
+             <div>
+                 <p>Medicine</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='far fa-hospital' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Wellness</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-bong' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Lab Tests</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-cocktail' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Beauty</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-hospital-alt' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Health Corner</p>
+             </div>
+         </div>
+     </div>
+               
+     <!-- main
+            -->
+ 
+ 
+                          <!-- navbar -->
+ 
+    <div id="he" style="margin-top:20px;">
+        <div>
+            <a href="covid.html">COVID Essentials</a>
+        </div>
+        <div>
+            <a href="Diabetes.html">Diabetes</a>
+        </div>
+        <div>
+         <a href="Eyewear.html">Eyewear</a>
+        </div>
+        <div>
+           <a href="Ayush.html">Ayush</a>
+        </div>
+        <div>
+             <a href="">Fitness</a>
+        </div>
+        <div>
+               <a href="">Mom & Baby</a>
+        </div>
+        <div>
+              <a href="">Devices</a>
+        </div>
+        <div>
+                <a href="">Surgicals</a>
+        </div>
+        <div>
+               <a href="">Sexual Wellness</a>
+        </div>
+        <div>
+              <a href="">Treatment</a>
+        </div>
+    </div>
+          <!--------********* header *********--------->
+
+    <div id="actual">
+
+        <!-- left div     -->
+
+        <div id="left" >
+            <div></div>
+        </div>
+
+        <!-- right div -->
+
+       <div id="allProduct">
+           <div id="CovidEssentials">
+               <img src="https://www.netmeds.com/images/category/3052/eyewear_0.jpg" alt="">
+           </div>
+    
+        <div id="con"></div>
+       </div>
+    </div>
+
+
+
+                                  <!-- last part footer -->
+
+
+<div id="footer">
+    <div id="infoo">
+        <div id="img">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+        </div>
+        <div id="text">
+            <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+        </div>
+    </div>
+
+    <hr id="hr">
+
+    
+    <div id="one">
+        <div>
+            <h5 class="h5">COMPANY</h5>
+
+            <p>About Netmeds</p>
+            <p>Customer Speak</p>
+            <p>In the news</p>
+            <p>Career</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Fees and Payments Policy</p>
+            <p>Shipping and Delivery Policy</p>
+            <p>Return, Refund and Cancellation Policy</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <h5 class="h5">SHOPPING</h5>
+
+            <p>Browse by A-Z</p>
+            <p>Browse by Manufacturers</p>
+            <p>Health Articles</p>
+            <p>Offers / Coupons</p>
+            <p>FAQs</p>
+        </div>
+        <div>
+            <h5 class="h5">SOCIAL</h5>
+
+            <p>Patients Alike</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>LinkedIn</p>
+            <p>Youtube</p>
+            <p>Refer & Earn</p>
+        </div>
+        <div id="or">
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+
+            <div id="news">
+                <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+
+                <input id="inp" type="text" placeholder="Enter your email address">
+                <BUtton><i class="fa-solid fa-arrow-right-long"></i></BUtton>
+                <hr>
+                <div id="in">
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <hr id="la">
+
+    <div id="as">
+        <div>
+            <p>Medicine</p>
+        </div>
+        <div>
+            <p>Wellness</p>
+        </div>
+        <div>
+            <p>Lab Tests</p>
+        </div>
+        <div>
+            <p>Beauty</p>
+        </div>
+        <div>
+            <p>Copyright© 2022. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+
+<script>
+    var oneData=[
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909871/full_rim_incl_lenses_rectangle_grey_grey_medium_0_0.jpg",
+           name: "InStyle ISHM05 (including UV blue lens) - Grey",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 3900.00 ,
+           MRP:4900.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909870/full_rim_incl_lenses_rectangle_black_silver_lt_grey_medium_0_0.jpg",
+           name: "InStyle ISHM05 (including UV blue lens) - Black",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 3900.00 ,
+           MRP:4900.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909869/full_rim_incl_lenses_rounds_black_gold_small_0_0.jpg",
+           name: "InStyle ISFF26 (including UV blue lens) - Black",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 3900.25 ,
+           MRP:4900.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909868/full_rim_incl_lenses_rounds_transparent_transparent_small_0_0.jpg",
+           name: "DbyD DBJU08 (including UV blue lens) - Clear",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 3900.96 ,
+           MRP:4900.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909859/full_rim_incl_lenses_rectangle_silver_large_0_0.jpg",
+           name: "InStyle ISHF16 (including UV blue lens) - Pink",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 3900.00,
+           MRP:4400.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909857/full_rim_incl_lenses_rectangle_black_lt_blue_blue_large_0_0.jpg",
+           name: "InStyle ISAM27 (including UV blue lens) - Black",
+           ii : "Mkt: Reliance Vision Express Pvt Ltd",
+           price: 2113.02,
+           MRP:2300.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/909858/full_rim_incl_lenses_rectangle_grey_silver_medium_0_0.jpg",
+           name: "InStyle ISHM01 (including UV blue lens) - Grey",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 696.00,
+           MRP:725.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/944745/vision_express_kids_51188_stylised_green_mirror_polycarbonate_sunglasses_small_1s_0_0.jpg",
+           name: "Vision Express Kids 51188 Stylised Green Mirror Polycarbonate Sunglasses - Small 1's",
+           ii : " Mkt: Reliance Vision Express Pvt Ltd",
+           price: 335.75,
+           MRP:395.00,
+       },
+   ]
+   
+   
+   oneData.map(function(elem){
+       var box = document.createElement("div")
+       var image = document.createElement("img")
+       image.src=elem.img
+       var title = document.createElement("p")
+       title.innerText =elem.name
+       var tit = document.createElement("i")
+       tit.innerText =elem.ii
+       var pr = document.createElement("p")
+       pr.style.color="grey"
+       pr.innerText="Best price* Rs."+ +elem.price
+       var mr = document.createElement("s")
+       mr.innerText="MRP Rs."+ +elem.MRP
+       mr.style.textDecoration=" line-through"
+       
+       var bo = document.createElement("div")
+       var bt = document.createElement("button")
+       bt.innerText="ADD TO CART"
+       bt.id="butt"
+       
+       bo.append(bt)
+
+       
+
+   
+   
+   
+       box.append(image,title,tit,pr,mr,bo)
+       document.getElementById("con").append(box)
+   
+   
+   
+   })
+   
+   </script>

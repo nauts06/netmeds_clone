@@ -2,101 +2,344 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/f70b78cd27.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
+    <link rel="stylesheet" href="./headerCss.css">
     <style>
-        #main{
-            height: 165px;
-            background-color: #32aeb1;
-            display: flex;
-            margin-top: -8px;
-            margin-left: -8px;
-           /* width: 1364px; */
 
-        }
-        #main>div{
-            padding: 25px;
-
-        }
-        #main>#input{
-            margin-left: 26px;
-            height: 22px;
-            width: 600px;
-            background-color: white;
-            margin-top: 18px;
-            border-radius: 6px;
-            padding-top: 0px;
-         
-        }
-        #input{
-            display: flex;
-            /*             */
-        }
-        #input>div{
-            display: flex;
-        }
         
-        input::placeholder{
-            font-family: inherit;
-            font-size: inherit;
+                                /******************************* header ***********************************************/
+
+        #threediv{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
-        #first{
-          
-            height: 35px;
-            width: 80px;
-            margin-top: 4px;
-            margin-right: 5px;
+        #threediv>div{
+            height: 90px;
+            width: 78%;
+            border-radius: 10px;
+            margin-left: 50px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 30% 60% 10%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         }
-        #sec>input{
-            width: 400px;
-            margin-left: 15px;
-            height:35px ;
-            margin-top:5px;
-            border: white; 
-        }
-        #first>h6{
-            color:#32aeb1;
-            font-family: sans-serif  ;
-            font-size: 14px;
+        #threediv>div>div{
+            height: 65px ;
+            margin-left: 12px;
             margin-top: 10px;
-            
         }
-        #f{
-           
-            height: 35px;
-            width:65px;
-            margin-top: 1px;
-            
-            margin-left:7px ;
+        .ti>img{
+          height: 60px ;
         }
-        #f>p{
-            color: grey;
-            font-family: sans-serif;
+        .we>h5{
+            margin-top: 5px;
+            margin: px;
+        }
+        .we>h6{
+            margin-top: -5px;
             font-size: 14px;
-        }
-        #se{
-            color:grey;
-            border: white;
-        }
-        #last{
-            margin-top: 8px;
-            height: 25px;
-            border: solid 1px grey;
-        }
-        #upload{
-            color: white;
-            
+            color: #5BA41C;
         }
 
-        /* footer */
+        /********* payment partner offer **********/
+
+        #pay{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #pay>div{
+            height: 90px;
+            width: 78%;
+            border-radius: 10px;
+            margin-left: 50px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 20% 80% ;
+            
+        }
+        #pay>div>div{
+            /* border: solid 2px black; */
+            height: 65px ;
+            margin-left: 8px;
+            margin-top: 10px;
+        }
+        .t>img{
+          height: 60px ;
+        }
+        .w>h6{
+            font-size: 12px;
+        }
+        .w>p{
+            font-size: 10px;
+        }
+
+        /********* previous order *********/
+
+        #po{
+            display: flex;
+            justify-content: space-between;
+        }
+        #po>div{
+            height: 150px;
+            display: flex ;
+            width: 800px;
+            justify-content: space-between;
+        }
+        #po>div>div{
+            display: flex;
+            margin-top: 25px;  
+        }
+
+                            /************** trending today *************/
+
+        #tt{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+        }
+        #tt>div{
+            margin-left: 18px;
+            margin-right: 18px;
+        }
+        #tt>div>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+
+                          /************ shop by category ***********/
+        #sbc{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            background-color: #f3f3f3;
+            width: 96%;
+            margin-left: 25px;
+            
+        }
+        #sbc>div{
+            
+           
+            width: 240px;
+            height: 290px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: white;
+            border-radius: 12px;
+        }
+        #sbc>div>div{
+            width: 240px;
+            height: 230px;
+        }
+        #sbc>div>h6{
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #sbc>div>div>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+
+
+                    /************* top brands *************/
+
+        #tb{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            background-color: #f3f3f3;
+            width: 96%;
+            margin-left: 25px;
+            
+        }
+        #tb>div{
+            width: 240px;
+            height: 280px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: white;
+            border-radius: 12px;
+        }
+        #tb>div>div{
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+        #tb>div>h6{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #tb>div>p{
+            text-align: center;
+            margin-top: 15px;
+            color: #5bb909;
+        }
+
+        #tb>div>div>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+
+                                 /***************** membership ***************/
+        #mem{
+            display: flex;
+        }
+        #mem>div{
+            margin-left: 40px;
+        }
+        #ex{
+            display: flex;
+        }
+        #ex>div{
+            margin-left: 400px;
+        }
+
+                                     /**************** category in products *****************/
+
+         #cif{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            background-color: #f3f3f3;
+            width: 96%;
+            margin-left: 25px;
+            
+        }
+        #cif>div{
+            width: 240px;
+            height: 280px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: white;
+            border-radius: 12px;
+        }
+        #cif>div>div{
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+        #cif>div>h6{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #cif>div>p{
+            text-align: center;
+            margin-top: 15px;
+            color: #5bb909;
+        }
+
+        #cif>div>div>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+
+                             /******************* explore beauty **********************/
+        #eb{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            background-color: #f3f3f3;
+            width: 96%;
+            margin-left: 25px;
+            
+        }
+        #eb>div{
+            width: 240px;
+            height: 280px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: white;
+            border-radius: 12px;
+        }
+        #eb>div>div{
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+        #eb>div>h6{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #eb>div>p{
+            text-align: center;
+            margin-top: 15px;
+            color: #5bb909;
+        }
+
+        #eb>div>div>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+
+
+        /********************* Advice From Health Experts *******************/
+
+
+        #afhe{
+            display: flex;
+            gap: 20px;
+        }
+        #afhe>div{
+            height: 160px;
+            width: 300px;
+            margin-left: 25px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        #afhe>div>div{
+            height: 100px;
+            
+        }
+        #afhe>div>div>img{
+            width: 100%;
+            border-radius: 12px 12px 0px 0px;
+            
+        }
+        #afhe>div>h6{
+            font-size: 14px;
+            padding: 15px;
+            
+        }
+                              /************ para **********/
+
+        #para{
+            border: solid 1px black;
+             width: 96%;
+             margin-left:25px ;
+        }
+        #para>h6{
+            font-size:14px; 
+        }
+        #para>p{
+            font-size: 12px;
+        }
+
+
+
+
+                                /******************************** footer **********************************************/
 
         #footer{
-            border: solid 1px black;
             height: 480px;
-            width: 90%;
+            width: 98%;
             margin-left: 30px;
+            background-color: white;
         }
         #infoo{
             display: flex;
@@ -105,14 +348,14 @@
         }
         #img{
             margin-top:40px ;
-           
+            
             width: 250px;
             height: 80px;
         }
         #text{
             margin-top: 40px;
             
-            width: 700px;
+            width: 800px;
             height: 80px;
             margin-left: 25px;
             font-size: 16px;
@@ -121,27 +364,80 @@
             color: #0B121980
         }
         #hr{
-            margin-top: 20px;
+            margin-top:-10px;
         }
-        .h5{
-            font-family: sans-serif;
+        #infoo>.h5{
+            font-size: 12px;
+        }
+        #or>.h5{
+            
+            font-size: 12px;
+
         }
         #one{
-            border: solid 1px black;
-            height: 70%;
+            margin-top: 23px;
+            height: 80%;
             display: flex;
         }
         #one>div{
-            width: 400px;
-            border: solid 1px black;
+            width: 100%;
+            /* border: solid 1px black; */
         }
+        #one>div>p{
+            font: 1.2em "Fira Sans", sans-serif;
+            font-size: 14px;
+            color: #0b1219;
+            
+        }
+        #news{
+            width: 260px;
+            color: #0b1219;
+            font: 1.2em "Fira Sans", sans-serif;
+            font-size: 15px;
+            height: 220px;
+        }
+        #inp{
+            height: 40px;
+            padding: 0px 12px;
+            border: solid 1px white;
+            background-color: #FFFFFF;
+        }
+        #in{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+        }
+        #in>div{
+            margin-top: 10px;
+            display: flex;
+            height: 35px;
+            width: 110px;  
+        }
+        #in>div>img{
+            
+           
+            width: 100%;
+        }
+        #news>button{
+            background-color: #FFFFFF;
+            border: #FFFFFF;
+            color: #32aeb1;
+          
+        }
+        #para h6{
+            background-color: #5bb909;
+        }
+        #para p{
+            background-color: #5bb909;
+        }
+        
     </style>
 </head>
 <body>
     
    <div id="main">
-       <div>
-           <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
+       <div id="mm">
+        <a href="index.html"> <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt=""></a>
        </div>
        <div id="input">
            <div>
@@ -169,12 +465,735 @@
 
        
        <div id="upload">
-        <i class="fa-solid fa-palette"></i>
-           <p>kkm</p>
+
+            <div>
+                <div>
+                    <i class="fa fa-upload" style="font-size:25px;color:white"></i> 
+                </div>
+                <div>
+                    <p>Upload</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <i class="fa fa-shopping-cart" style="font-size:25px;color:white"></i>
+                </div>
+                <div>
+                    <p>Cart</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <i class='far fa-address-book' style='font-size:25px;color:white'></i>
+                </div>
+                <div>
+                    <p>Sign in/ Sign up</p>
+                </div>
+            </div>
+              
+            
            
        </div>
+    </div>
+    <div id="second">
+        <div>
+            <div class="rad">
+                <i class='fas fa-pills' style='font-size:30px;color:white'></i>
+            </div>
+            <div>
+                <p>Medicine</p>
+            </div>
+        </div>
 
+        <div>
+            <div class="rad">
+                <i class='far fa-hospital' style='font-size:25px;color:white'></i>
+            </div>
+            <div>
+                <p>Wellness</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="rad">
+                <i class='fas fa-bong' style='font-size:25px;color:white'></i>
+            </div>
+            <div>
+                <p>Lab Tests</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="rad">
+                <i class='fas fa-cocktail' style='font-size:25px;color:white'></i>
+            </div>
+            <div>
+                <p>Beauty</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="rad">
+                <i class='fas fa-hospital-alt' style='font-size:25px;color:white'></i>
+            </div>
+            <div>
+                <p>Health Corner</p>
+            </div>
+        </div>
+    </div>
+              
+    <!-- main
+           -->
+
+
+                         <!-- navbar -->
+
+   <div id="he">
+       <div>
+           <a href="covid.html">COVID Essentials</a>
+       </div>
+       <div>
+           <a href="Diabetes.html">Diabetes</a>
+       </div>
+       <div>
+        <a href="Eyewear.html">Eyewear</a>
+       </div>
+       <div>
+          <a href="Ayush.html">Ayush</a>
+       </div>
+       <div>
+            <a href="">Fitness</a>
+       </div>
+       <div>
+              <a href="">Mom & Baby</a>
+       </div>
+       <div>
+             <a href="">Devices</a>
+       </div>
+       <div>
+               <a href="">Surgicals</a>
+       </div>
+       <div>
+              <a href="">Sexual Wellness</a>
+       </div>
+       <div>
+             <a href="">Treatment</a>
+       </div>
    </div>
+         <!--------********* header *********--------->
+
+
+             <!-- slider -->
+
+             
+             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1648222505_Home_bannerbij.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1648476484_Title_Banner_Wev1680x320.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1647868224_AAAAASCASCA.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1648222616_Home_bannerfdd.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+    
+  
+
+             <!-- slider -->
+
+
+
+             <div id="threediv">
+                 <div>
+                     <div class="ti">
+                         <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt="">
+                     </div>
+                     <div class="we">
+                         <h5>Order Medicine</h5>
+                         <h6>Save Upto 25% off</h6>
+                     </div>
+                     <div>
+                         <h5 style="margin-top: 15px;">></h5>
+                     </div>
+                 </div>
+                 <div>
+                    <div class="ti">
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+                    </div>
+                    <div class="we">
+                        <h5>Beauty</h5>
+                        <h6>Save Upto 40% off</h6>
+                    </div>
+                    <div>
+                        <h5 style="margin-top: 15px;">></h5>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="ti">
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt="">
+                    </div>
+                    <div class="we">
+                        <h5>Wellness</h5>
+                        <h6>Flat 15% off</h6>
+                    </div>
+                    <div>
+                        <h5 style="margin-top: 15px;">></h5>
+                    </div>
+                 </div>
+             </div>
+
+             <!------------ Payment Partner Offers ------------>
+
+             <h4 style="margin-left: 50px;">Payment Partner Offers</h4>
+
+             <div id="pay">
+                <div>
+                    <div class="t">
+                        <img src="https://www.netmeds.com/images/cms/offers/1634671066_Mobikwik_logo.png" alt="">
+                    </div>
+                    <div class="w">
+                        <h6>Get max. Rs. 1000 assured MobiKwik Cashback* ..</h6>
+                        <p>Get "Assured MobiKwik Cashback" max.Rs.1000 and min. Rs. 150 on a minimum purchase of ..<p>
+                    </div>
+                </div>
+                <div>
+                   <div class="t">
+                       <img src="https://www.netmeds.com/images/cms/offers/1643631754_1629112796_Simpl_Icon.png" alt="">
+                   </div>
+                   <div class="w">
+                       <h6>Get up to Rs. 500 Simpl Cashback* (10%)!..</h6>
+                       <p>From 1st to 31st March 2020, get up to Rs.500 Simple Cashback*(10%) on your payment via Simpl towa..</p>
+                   </div>
+                </div>
+                <div>
+                   <div class="t">
+                       <img src="https://www.netmeds.com/images/cms/offers/1627652224_1582882147_Ola_Offer_Logonew.png" alt="">
+                   </div>
+                   <div class="w">
+                       <h6>Get max Rs.500 OlaMoney Postpaid+ Cashback on Net...</h6>
+                       <p>Get cashback between Rs 50 and 500 on min. order of Rs 999 worth ANY products using OlaMoney Post..</p>
+                   </div>
+                </div>
+            </div>
+
+            <!--****** Previous Orders****** -->
+
+
+
+        <div id="po">
+            <div>
+                <div>
+                    <div>
+                        <h4 style="margin-left: 50px;">Previous Orders</h4>
+    
+                        <p style="margin-left: 50px;">Your Previously ordered products</h4>
+                        
+                        <h6 style="margin-left: 50px; color: #32aeb1;">View Orders</h6>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg" alt="">
+                </div>
+            </div>
+            
+            <div style="height: 130px; width: 1px;border: solid 1px rgb(179, 174, 174);"></div>
+   
+            <!-- 2nd -->
+
+            <div>
+                <div>
+                    <div>
+                        <h4 style="margin-left: 50px;">Beauty Products</h4>
+    
+                        <p style="margin-left: 50px;color: #5BA41C;">Save Upto 40% off</h4>
+                        
+                        <div style="margin-top: 5px ;background-color: #32aeb1 ; height: 35px;width: 150px;margin-left: 50px;border-radius:6px">
+                            <h6 style=" padding: 6px;margin-left: 15px;color: white;">Explore Beauty</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------- Trending Today ---------------->
+        <br>
+        <h4 style="margin-left: 50px;">Trending Today</h4>
+        <br>
+         <div id="tt">
+             <div>
+                 <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1648270623_Freeshipping_web.jpg" alt="">
+             </div>
+             <div>
+                 <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1648102662_Veet_Web.jpg" alt="">
+             </div>
+             <div>
+                 <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1634972793_Netmeds-masks_Mini_Banner__Web.jpg" alt="">
+             </div>
+         </div>
+                       
+
+                <!---------- Shop by Category ----------->
+
+                <br>
+                <br>
+                
+                <h4 style="margin-left: 50px;">Shop by Category</h4>
+                <br>
+                 <div id="sbc">
+                     <div>
+                         <div>
+                             <img src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" alt="">
+                         </div>
+                        <h6>Covid Essentials</h6>
+                     </div>
+                     <div>
+                        <div>
+                            <img src="https://www.netmeds.com/images/category/481/thumb/ayush_0.jpg" alt="">
+                        </div>
+                        <h6>Ayush</h6>
+                     </div>
+                     <div>
+                        <div>
+                         <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhEVFhUWGBoXFhgYFRcVGhgXFxcYGBcXFhcYHSggGBolGxcYITEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGy0mICYvLS0tMi0tLSstLS0tLS0tLS0vLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS8tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAABQMEBgIBB//EAEUQAAEDAQUEBgYHBgYCAwAAAAEAAhEDBAUSITEGQVFxEyIyYYGRUqGxwdHSFCNCU3Ki8AcVQ2KC4RYkM5KywkTxNHPD/8QAGwEAAgMBAQEAAAAAAAAAAAAAAAUCAwQGAQf/xABBEQABAwIDBAgCCAMHBQAAAAABAAIRAwQSITEFQVFhEyJxgZGhsfAGMhQVM0KSwdHhI1JiFnOCssLS8TQ1U3Ki/9oADAMBAAIRAxEAPwD7ihCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhLr3vEUGYiJJOQ0nmeCxV4XpVr5Oqw30RkP15q+lbvqZjRKdobYoWZwOku1gfmd3meS1d5bSWejIL8TvRbn5ncsxatuK7jFKk1vCev7wlH0VvpBXrDaOi7OAnj+itDrUsYSxuJ3MwPQ+hXPfX9StUh7+jb/AEtxHz1PeByTSz31bTnVNJk6NwEvPJs6d503qCrtDeWI4LPTLd2JzZPfk6Byz5qvUt7HEudTpFxABJaJgaCUC20/u6OX8oSkWN+44nxPBrgGgcsi6eZJ7E7Zt/ZzBAe483NJPlAjkB3q1Zb/ALyqOLBRoggZySRJ+zLCetvjWI4ib1K2Xr1cVOzAT1yDUdl/KCBnzKoUL8LOwKYjgB7FMdp3nM4D4BR+rL50y/Dwgg5cyYz7o7Vb/aTZ40k/4Sg39eBcQLLvy6rvbpK8bf15H/xfyO+K8dtK4+h5BeHaN38n/pMDZviA3/6P+9LvrmhP27/wN/2KRt+Xkf8AxfyOXn+Ibd90z/a4e9Fn2hqYgG4JKussVDSaRP4N/jyHkFRUtnt1y75/1FbrW9ZcA9HVeY/pYPUBQ2e+7Y4R0TcWcCNY4daYVa3X9babA4sa0l2EgtHMEGeabU7HSaQ4OphwzBDIiOGahvl9JzYrWgQc4wjONIVTKNUPbGYxCQZOUEEDM8ZEjdqM1puHltFzsZkAwTgAncT6ZcTkcktpX/bT2ujH9M+9Si/LZwHlSHtqyPGEofaQ09SphG7RAt7vvR/tamhtSdISBm32MkOxu98i30T1l72sxoJ4spx6qvJcVb5tgOWHxbSH/wCyTG3u++9QUbqzHHrvkbxKrbYvBzcI7B78IVzviOkRDabp5lw9HH0Kc/vi3nshnlTy5xVKjqX3eIJH1WX8v913ZLsslRssrO7xmI5hSWq7bMxuI1yANZn4qGFjdfT91va+7r4ejGsRhqSD4gn3mqL9p7wZm6nTIH8uXqKbXXtnTfArNNM8e0PVp60qdTsR1rtPg74qPoLD98zyPxXnS25Gfl/yVd9X7cY6WAEcHGfRjT4Lf0KrXCWODgd4II9SmXzsV6NIYrPX6w1wzMSBmCYOqe3DtH0rxSfBJ7LoiSBJEeBXnRYmY2GR5qf1h0NwLW6bgqZc256ZwCJ5jvWnQhCpTJCEIQhCEIQhZLb3s0ebvY1fOrfWe3NucbjJmJM6Zbl9G27EtpAanFH5Vhb3sr6bCxlN7nvEudBcMPoyBqd/dzV9RwFrmTviNZSayoOq7fEMY5vVxB4Bbhw56g5x8p4gcYNC5RXtNTo2FgcQXDETBwiYniVfsd1WmpE1GNlj6rsWPJtJ7qbw4BpOKWnISl10069Bz3dA84mVGaFsdI0txTG6ZT1u0lYPa+pZqmIUXUnFjnU3EvdiNUENOF2/mSUpbVqHVzvFy+j3GzrEE9FQoRH8tIZw7iN5jsjmYp2e6rRVjo6tJ01eimXCDgNTEZaCG4Qd0yDkqF59PQawvcyX4+rnIwVCwl0j0mGOSu2W+atM2gijUcKwgF7nPcx2FzMZcWy44XuHiOCqbTW2ra6oeaJZAADRJ3ucTMDVxcfFBq1SMnO8XIp7PsOlGKjQwxrhpTMchxMcOrwK4sD6r2lziSN2+TkRkQRl+tVNjPFW9mbRgaaNdpDc8LiDlplO4EZ8+aY3nc2WOl1t8Df3iNU2sqv8IAzPPivnHxVYH6e91JrA0AYRTAAw7jDYl0ziymctAEjxleSV4hMFx+SY3XSJl3gOaf2ezlo1zOvwXNx2TDTa46kSPHOVFfd5dGMDe2fyjjzWVzi50BdBQpMoURUf7nhzUF6Xl0fVaZdv4N/ukD6jnGSSSVySrNrsL6TWOcBFQS0gzkI14HMK1rQ3JKa1WpXJdGQ8Bu9lVsRRK8QrFmXuJeShCEKWz2hzHBzTn7RwPcmN8VsdmJbOeUDMzMRlqUpW22FsbWU3WioRhxfVgxk4DMid+4cis9y0GmRyjxyTvYFd1K9puiQ1wed3ykHumI7ws5d2wdpewVK1QUQfsulzzwGEEAeanr7DOc49DWb/ACtqSJ7sQnwkLUXteL21Wl3ZIOXoiRmO+CJVO8bWRLWnTMka8QB396TvpUKbHF27xncB2z7hdxV+Jb01sTSABlECCO+TuyOo7zOIZd9ag+pSrNcxwByO8YmZt3OHeFpNhRNpafRn1iFpq9ip2uzdEINSm0AOA0OUtxd4AkePBItgKX1j38C0eZcT7AmNEdHQLRu/MrntqVDfbXp3LmgBwBy4sGfnC+jIQhUJshCEIQhCEIQk1+UQTTcfs4o8QM1mK2pWtvn7Pj7lkLQ8CSdBJPgrmFKrxrQ7t18B+QAS+9Ld0Ywt7R9Q481nzJzJPmpK9UvcXHUn9BRrc1uELkriqKzpIy3LzDz80YefmvUKclZsDeAXkK1Y7dUpGWO5jWfBVkLwidVYwmmZZkeScVXUrRmIp1d43H+/6zS+nZHGoKZBBnPuG8qumdgvGCBUz3B28DgeIUILRktQeys4dJkd53Ht4Hn4rTW20to0y7gIaOJ3BYmrULnFzjJJklNdpLbjeGNMtaN2hnU+UDzXdi2edUYHl+GRIET4nMwsdW7t7OmKldwaDlv/ACBPkt9enXvq5o0Gzh7BynMgcgqF4Xe6lhMhzXCWuGh+B7letVntNSlTBpdWnMGRJxRq3XdwVu77mNJ5fUMsYJae0DGmX63Lq7L9dUrBhbDXTHEQCRnv0Sy62tWcx1SxDHtYMTnE5aE4WwRLoEmdMgRJharfZ1FjsF0XUzUOFrBmdRm4kHLFGHxkjMULvsNEUXVq5OchjQYzG9J05vyxE2hwptJLoMROcZ6d+aV2qzupuLXtwuGoPfmE5tK7a9JtYfeAdHCRMd2iUXtE0nmlh+QlpPEzqTz3DcFEhCFpWJC+j7N0hUu1rIntSOVQnzhfOFotmL3FMdC94YCQ6m45Na4TIfOjTx3GFRcCWeaabHqBtxhInEC0cySIHfEDnCmqlwIYTIaSM+UiO4gAqEehwOfLUfDwWmtt2MqkPDhSfvY6ACRGbeIz1HFV23G1hxVarQ05xHaA4AEk8hqudrWVZ1Qwct2emZjmYkwfNdCGQOPhpl4TGcprspSw0p4wfOT7CEu2UYMGMaPquI5B0D2FQbSX0KAcwGKjmwxodJaxxh1R4GQJHZB4dxTW6KGBlJnCJ5nM+slNQ0NZlpkPBXUs6oZva0n8RyPfDj2QtAhCFFbUIQhCEIQhCEsvrRvj7lhr7fFN3eQPWtxfejf6vcsJtAOoeY96vo6hJtqGGO7Cs4hCFvXIIVmwWJ9eo2nTEud5AbyTuAVZbb9mlEYqz94DQORLif8AiPJQquwtla7G3FxXbSOh17AJQ39npw52gTwFOR54vcstet21LPUNN4EjMEaQdCE1deVZ9vlrzPSQ0SYiYiOEJp+0lsvoBol2F8wJMdWPeqmueHAOMyFvuKFq+3qVKLS0scBqTikgb54rEoQgiFoSSQha2ofpNkhmoABH4d3iMwslKt3fbX0nhzNTkRri5hLdp2T7hrH0iBUpuD2zoSNx5HjuTLZl7Tt3PZVE03jC6NQM8x2Sct4PFNtmbQ7DUpk4gGy1pOR9ICeKlu6whtsJb2WDFh4FwjCeWL8qK9BtQh7CaFY5w7IO7w7iuj/laRAOKu/hr+hn4lIbol76ooy2pWbhNMgyCYDnl3ylgaDD26lxk5wOgt2Cmyl00Op0SXB4IzAktaB8wcXEDCdA1sTvX3lebxXqmm8tBhsiJhuWR3bylVaq55xOcXE7yZK4KCV1VC3bRptps0aAB3CB5Llbi6fXe57jqSYnISZQhdspOIJDZA1IBIHM7lwrlQhQ23sHx9imUNsEtI/WipufsX/+p9E12F/3S1/vaf8AnCcXVaa9FrWi20SzKGO+sDRkY62bB3AjTRSvvm01Gy20WakY+w0MdkTAxOBI8I13LU3PcFKwWY1X0xUrYZcSAYccgxs6NBIBI11UeztqbeFOrStNMPLftFoBh09kjsxuI4pOyhVNOZjlJX0q62vs5t6GGmHOMkOws3amIMzuJOcLG7P2LFbDT6QVRJLnyXY4LXEknOYyMnVfU6PabzCxezdxmyW+vTOYFPFTcdSx7mxPE5EHxWzodpvMKVA/wwOBPqqNqhpvHVGmQ4MgxGQYAPzy3aJshCFcl6EIQhCEIQhCV35o3x9yxV608THjunyz9y1W0dowOozo7GD5Nj9d6ztTUq+nkAUnvS2o5zOGR7wD6FY5CmtlHA9zeBy5blCt4MrkC0tMFC2/7Mn51x3MP/NYha39nFSK72+kyfIj4lVV/symGyXReUz2+YITs0rDYnPrOeDUJJ1kgknIAacJPmoLsr26pWfXbQaGVA0APcBDWkwGxnnJMxBlIL+a2neLi8fV42OOUyCATlv3rW7R2F1bA/6QGWcCakEjEJBEEZHLIc96zOAETvGp9AnVJ7qheGDCKbjDWkAk5jE4mco5cdTC6ttiYLdZ6mEYnNqTlqWtyPPM58l79Ksv0p1m6IGq8YnEtBB6uKCTmcvBT3i8C12TPUVgO84Gn3LO1a7WXyS8hohok5CTRgZ88lFrcQ/wnyK1V6vQu6sZ1WgzwLBPeeKcWZ1kp2g2RtIY3AkyAdRigk5xG7RQ3LdVKja7S5oEMDCwejjaS6PLyKodM398TiEERO6eiiJT+xtm02scW0R+RyHZDtA9VGiRVeCQOpUc0QNAGuPvn2Jdcl7C8GVqdWk0BoEQZ1mNdCI1UVw2R1msYqUqIqVqkHhkXZSdwDc+ZVOtbbNYKDqVB4qVX5EgjLXMkZCJMDWSmlz2k2iyNZRrClUb1XHCHEBpjQ7iM5UnSAYyaTz9wqqLsbmtqOxVmsdm2JzIyBPVxADumdJXt7WFjq9kqvaG1C6HNyM9UnPjERPeodrL4pWcuaKQdVqtzccgBBAk6nQ5BVajbOy1WdrahqVsZxvLici2ADnAOYiNN+qg2vsratuo03uwtc2C7h2vWdPFeNAxDFpB/XwXtxUeKVU0oDi5o4wSGjPKAc8+Ep9aLYbPQouo0w6iAMcahpAzAGp1Jn4kYHaO00aldz6DSGGJyw57yBuH91trku202WoaUh9nMkEkSzeMtczqNN+Syl+3T/ma7aIGFmEkTABIEgeJ9ynRwtcc/fNZdpitUoN6sZxhI0IB+U/yn3vAz6jtBgEics8sjlwO5SKStQJoVXxmAAPP4wrbo/wX9h9Fg2A3FtS2/vKZ8HArTOu9rxTH021PFYYqYFqecQBbMgtjLEM58CV5Y7gp03tFO12lgqktaRaHdZzJkZN62We7I780huG961kHVrUHtzJpudInfhI0J4AxJzCY2vaOv0Yp0X2WlMnqvGJpJJMZw2Sd2eeUHNLxfjDnr3L6HU+G6grdQtI3OORA5jWYnTuTW4IbbKzOlqVCyiGl1SoasO6QEtBIGQnTjK1dDtN5hfP/ANnlnLa1brB4LBLmnECXOnM8cit/R7TeYVdJxeMR3krzaVFtCv0TTIa1onj1Rmm6EIVqXoQhCEIQhCELJbf9mlzf/wBUhsFq6RsnUZH4+Kfbf9in/V/1WFsNq6N87jkeXFbmNmkO9cneV+i2i+dCGz4DPu9JTG/LNIDxqMjy/XtSNa8w4cQR5grM2+ymm8jdqD3KVJ2ULLf0IPSDfr75jz7VWViwWypReKlN2Fw0OuuRBB1CroVxEpc1xacQ1CsXpeTqzzUquGLq6QNMsh4KobbTj/UfHCGx5YlUrhr6zKb34WEgF2ZAaXRiw74mVpKF32SmHg9GcTXECpVo1SMLaoGFzAB1urlySarfVQ8tpwAJHh3r6fY/CVg6zp3F4XvqVGh/VdA6wBjQk5HMyZPCQCnN5My+tqdXTs5cuvkva14seS59R5cdT1ZO7MlyLsu6yOjHWOdSmwnq08IeKhe4hwdIbhaMWQ6+atPuKzRiFQDC1zntNai4tcKdQsbIAFQl7WjqjR8ZHNUi/rnPLwTN/wAHbFaS09J+LlwieWkaCcxND6XT9N35fmWr2OvyjSbXNV7vrMIaSMRJaHSDhmO0Eqp3LY8ZLXkhr3NwOr0WyGPaDVxuaBhIdOGJMOg6oslgouFoqdIWjpqjBhqMpMawNcQ7CRNQadVpGR71Nt9UdlUEjll5rLV+E7CkOks3OY9u9/WaZBbGEYTvyIOuQBzCVvtDASHOdI7mxkSN7lz9Kp+k78vzJi+6LIcfXJwlwxdNS1YwPaQMMva9xLAG6FpMmYE9quKwl5w1Q1hq4RFak4BhqNA3SR0bsYdPVyBmHFefWFeTEL1vwdsUNa14qkwN+/LdBInWOziJT/S6fpu/L8y6qXhTcZdUeTxOE+1yZU7usrWuya146TtV6NUgGzucwQ1uF31gyLYIJG+F1UuSxB0OqnDIaIr0iSC+mwVsQYQGlrnHARIwZmCj6fccvAqf9kNiDLDU/ED6CPXzE+0NorSGwyu7Dw3j4a8lTp2l7ZhxGLtZ68/M+aU2IYXvYDO6W9mJifUPJMUxs6vTU5IAMwYXD/FGzDsu9FFlRzmluJuI5gElpG7e05wJEA5hCZ2/6uk2kN463JQXZRl2I9luvu+PgoLVWxuLvLluWk9YwkTHdDTxTBOQ3EAakenHglFosRxSyTJnCOscye0AOCs2LZ21VHYW0ag73AtA5uIHqkrVbIXZ0lTpXDqM9btw8FuEnr2dNr4aTHD919Q2T8VX9W1Dq7Wl2gdmJHEgGJJ4QDrGaU7OXM2y0sAOJ56z3cXcBwAGQ/um9LtN/EPavCvGdtn4h7VNoAEBY6tV9V5e8yTmSnSEIUlWhCEIQhCEIQsj+0DsU/6/+q+eOX0P9oHYp/1f9V87cmNv9mO9cRtj/rn9jf8AKE4ua2/w3H8JV+3WUVGxvGYPf8FmAVobst3SDC7tD1jiovbHWCss64qN6Gp3fp3bvcoHsIJBEEarlP71sGMYmjrD1j4pArWOxBYbigaLsJ03KK02YO13RmN0biYnxVf91j7xvm75FdQs1Wxo1HYnDPlkndh8V7UsaIoUanVGgc0OgcASJjkSQN0DJUv3UPTb+b5EfuwfeN83fIrqebO3aHkveJa3QH0styxXlGztKDq9WcI568AOZ95JtZ/F+3bqsKNN7ZP9DcuZ5BKbHsfVqZl7WjKCSc54DCnrNjKeEt6WuRMgdUAOiMURBMZcltqFlDWF7mlxAJDQOAkADeSu3XmBrRrDd2Jz4CDnzCQ0rG9uh0jn9EDo0DEQMtSSDO+Oe7RdS/bty2Gl8xvgN9B4L5pb9iSM6VTEANHak74IBCS1rlLSWueARqCXT/wX2UFtYH6t7TAMubhOc/DTlxWY2jurE0wOu0SDpLRuU6YfZVW0704mOMB46paToHDQA55jxygU3W3Npuol1rU6wE4S1pkcjGvl6r57+6x943zd8iP3WPvG/m+RXULpfqyhwPiuTHx3tk/fb+Bqis1mDNO/XfO4GPWrFNs8tSeC4Viz2Q1W1mB0TSxf1Odhb/xcramG3o9QR+qVUH19r34ddPLicychkNwAgAboAGpOuaztt2jcAWMe1jZM4Tmc9dOHsVWhfwGjqjjvOL16Zjmvf8E2h0jDDs+1kCO5ypuuGtQzq0ajM8yWmPBwyPmlhfiMkyV2bLZtJuFjQByC+j7A7V4nCy1GtEk4HgRLtS1448CO4L6CvgL6LqBZUa+HCHNPI5f+l97o1MTQ70gD5iVNridVFzAyABAXSGnrs/EPahctPXZ+Ie1SUU8QhC9XiEIQhCEIQhCSbSXcK7A0mCJLT35ajgvmN4WJ9J5ZUbB9UcZ3hfXbw+z4+5I7xsbKzS14kbjvB4yrqdcsyOiVX+y2XPXbk/yPI/kfGQvmq6pvLSCDBGiZ3vcj6BntM3OG7m1KlvDg4SFyNWlUovwVBB95/utLd9tFQcHDUe8dyq3rd0y9gz+0OPeO9J6VQtIc0wQtFd9uFQcHDUe8dypc0sMjRMaNZtyzoqmvvMc1mkJ3ed2YpewZ7xx7x3pIVa1wOiX1qDqTod/yrFgP1jYYHyYwkAzPP2raWWlFRjG9UFzZDcpzE6dyw1Gs5hxNJB4ha3Z6qajGvJcXtJ1dv7QkerwSzatzTtqPS1RLZAMQYnQweB4SeG9Odht6WoaTTDtRu0iRIzkjugK9ettqUba6o2XU2MaarZPZOEZDiCQf0VRuC+K/QMZSa0uY2o97nzmA4mG5jPn6oWoqspHFaAzE57MLpJgsnMOGYEZzlORSardlncxrTY3w2S0h5MyS6A7FLgcznpKua5rm+HD9U2qUarXlzXfzZSRqRvgxpnlkZj5ioL+tra9mpVwcL2nNoOkkgyOEsyKt7QvOOmQTmHAicjEajxK8N3UHOc02fDAZ9qJiYgNO6Nd/gvLcGv67phgMQY/F7I8CsV9d0bakH1RImAMjJOgzMc9QrKVvVquIaQCQM8x8pzJgbxlHdpBWa2gYGhgawNBzLgAJPCd3FI1ZtNte+QXEtnJpMxwUDGEmBqU5YC0Z6rj7qo2rUxM03ZR79eK7s1AvdA8TwCZUGtYKtYEQeiY2TAhuMnPfm5VqzxTbgb2j2j7ky2YwuDmP0BbHk6fasl6C6lI0kJ1sB7KV4KZ+YgjsIzjwBnnkrlx3sysOrmRwM6ZK+y+GPcaPUxDVhe2f9vJV7tFFlYljcIiBDde/Lj7kzs9hoGq5xptD8jJAnuIKUCCu3dlqvn/7SbmqvqWZlnpkl4eMLYGbS1wJnICMWa+j3UT0FLFr0bAeYaAfWoK9nx1ARkWxmDGWpHeCmAECBor6E9yzV4y4rorlnbZ+Ie1BK8pdtn4h7Ves6eoQherxCEIQhCEIQhUrwPZ8fclTjmmd6fZ8fclTivCvQuKmeR3pHfOzTXS+jDTvb6XI+7TknVU5hSvKkx5aZCpuLWlcNw1BI8x2FfNKtJzSWuBBG4rxjy0ggwRot46xU6zCKjZzy3RyKzt5bO1Kcmn1292RHP8AsttO4a7I5LlLzY1ah1qfWby1HaPzHeApbuvEP6rsneo8u/uReF2ip1m5O9R5/FZ7RN7Bev2ang79e1ScwgyFVRumVW9HW8fenb481dWmWmHCCFauy3mi/EBOWYmJanlpszKoz8CPcUhtlgfTz1bxHv4KL2067DTqCQciOI9fBQfQq2rxVpHTMHePfgttZrWHNJpkOa4Q9hJgyIzjNpjKUPp0t9nMzOTmkTxkuB3ndvWCo2h7Ow7D5+5Xhf1oz+s1/lbl6kgbsvaNp1LSs0s3CoDIHIt1HgBAACfN2/a1RNxTId/TBB8SI81rmthpybTYJJg5xqc9GjlPgs7f97NeOhpxhEZty7PAcPgldpvCrU7b5y00HkMlXYwkwAtNrsmr0zbm9qY3t+UAQ1p4jQk8CR2yQIx322hUpGhbMwtdqTGI8t4A7zy3rxonIK6IpDi8+pcgimOLj6lxY7JUrPwtEk6ncBxncE7Mb9EmYC0w0S46cv3RYbI+tUDG5k5k7gN89y3IsFGhRDJiDixby7iRw7l1dV3soMwtzJ7Tt5Pu5KhfBxPw7hAS27r4mwNF2Oxtli3ON/z7+Q4D8zv001W2G76RqOcx+Ek5gudh8ATA1TJhpUny17nuggy9zwBzJOFU6lkAzXV0WI1H9Y9Vp0480tkxC6MkLRWKoSMzrmPgrJK4rMDRAUbakhaqTvulYarfvBSFy9sx67eYURK6sh+sbzCuVK0KEIXq8QhCEIQhCEIS+9T2fH3JFbbUym0ve4Na0SSf1me5O74PZ8fcvmn7QbUR0dKd2PmcwP8Asq6r8LSVssLX6TXbSmJ1PICf2HMqWttPWqio+z0A6nSAc9z84aZgkNdlOE6E6Li79uZMVqYE72Tlza6ZHIqDYz/4V5f/AF0/Y9ZArCarxDp1/UhdZT2XZvdUpGmIaQAZOLNodMzrJ4RyX2C76oczE0gg5gjQggQQrTHLJ7BWomi9h+yQfMaeY9a1FM5rcx2NocuRu7c29d1KZg+Wo8iFWvK6qVbNzYd6Xx4+Ky9uuOpTPV648vNbFxVaucwr2VnM00Si62Zb3ObhDuIyPfuPeFjLJbn0zAzG9p/WRTqzW5lTQweB/WaZVrDTq9toJ8vYk1q2fz+rfPAHI+YWjpqbtckods68tvs+u3hofA6dknsXNqu1jsx1T3aeSXvu144Hx+KtP+k0u2yRxIHtUTr1PoDzVoxbs0srChP8QFh4EEHwXFO7j9oxyXlWu1ows8/1quQ6rVMAT3RAHNObt2eGTqp/p/v8EPeG/Oe5St7apcGLduX8x08f0k8kruy7Kld2WTd7jp4fBbSw2NlFuFg5neTxK6ptDQAAABoBkF1iWKrVL+xdNYbNp2onV28/kOA9d+WSmDlnrxr/AFk7i8N9YCcvqQCeCzV5z0RcO00h3iDKxXDtAnVq3MlXLVUCl2dflPHNKbTWdliEEtB/3CQntxUwGgcFm0K1H5Uzt1fC2T3DzUFJ0GdygvJ2JzW8OsfYPevTkIUg4h0qGEFsK85e2U/WM/EPao2ukA9yksp+sZ+Ie1MAUuhaRCEL1eIQhCEIQhCEJTfzowePuXz7by73PY2q0E4Jxdw1B5SPWt7tG6Oj5n3JS6q2Mz5quowPBBWqzuXW1VtVu7zByI7xPZqsNspeHQU6rKlmdVZaQAMLsEhmKRIEk9buOW9VtoqVLC3orFUoZkFxqGoDqMIkwCC13km943HQc7qdI3uYJbnrEjIdwV6jdVCkM3VaoBxBr5IxccAETmdeKydA+MOXvuldIdr2geazcWI6jrCYECeth0gac43LnYmxFlAvjN5mODQMvaStCwGfBJKd+UrNQdUtBdTaHxmxxPWgCA0GUXHtbZLVULKFUucGlxBY9nVkAmXtG8jzWjGyk3PIDech49pXNXFZ9xVdVdq4z+3donhCq1jmFafWB3jzCp1ZJECfEaKH0y2/8jfxN/VVYHcD4KaiB3qN/aGuq6og8CuKlN0ghu9aFFW6cqCvQBa4loJg5kTuUrKsDQ+Sr1LQcDx0b5ggCBnkYzlCCJyK7o/6WXBd0pVWhXd0UGm4OiIy15yprLWyza4HvHwyQhTrpRdJ3FdB3cUIUF41MLR3uA8Myl94DEWMA7bgDynP1Spb4rAGmDlmT7FxZiMfSHRohve48PD2rJUzqQdFtogilI1zXd82HpH0y2JGo7hmI9avUy2kySYUdlYZNR+pSy9q73PEiG6jvVb3SSYVjGwA0lXrOCZcdXezcFYIVKhaYCnNqnRRCkVZoP0bxMDxVqyu+tZ+Ie1dXZYiIqPEHVoPqJRWZFopkaOcD4zn+u9baIcG5rBWLS7qrSoQhXKlCEIQhCEIQhKL+p4ujHefcqAsXf6kxvuph6M959gVH6aOC8Qs9aWkVXHH12uDGUiMyD9oGd86ruy0nmu3GxzXOBywjqgaeHE8U2q2kEyHEe7KIHDiuWW+DJJOUZ8cpP8AbvVmMRpyWMWzsck/enz1zJ3ZZQI3KrfDH0eiqNcA4VDBidaNUTG+BJVE3jUqVIrVAQ2m904AIzpzlEHLPeptorbaH0gbK9lOsx4cxzxLRk5jpBB+y925KLpq3g6pN4WijUpim5rW02tBxPLZJhjcoafNLr5j30KjGgkkRAAz03nv3geh1CkTVa/FAGUZxoeBA37xl6N8LJ/1GTMf6Q1BwmfFSUqjJaWvb1sMQwdbEJGffBKr0aNJuhqHsyTGrARPjJJV27rKwSWg5xrGRaNRwmSeZK5V+zLkgwxx7mCe32dJWlhMiYHe4x5/pqrdEGBJkwJOknjG5dlq7a1c1x1TyPsXUbNt6lC1ZTq/MPKTMd09nDJRquDnEhDLMXbwF2LD3pGLW5u8+akp3qeJ8VvVcJ19BbxKPoTe/wA0tp3qeKstt5KEKf6GEqvJ1WlD3vAZIGQPfrIy3eSZNtZK76ZRc3EFJj8JmEpBD9C1xHAAxPHLJcfRy109qdBw7u4JgKDASQwAnMkSPYuHuzG7NUdATqVo+kACAFyyiTm4+G7+6jtFOk/6uo4tLsmOG524njwV5zVnb9MvjgB8VKpFNuQUaU1X5lWrPcFSf9Rpbxgz5f3Ty67AymZHWI+0REE7mjdzzSS570aSBVOF4OTp6rvxTo7v381Z2otbgxrWPPX7UejGg7jPqQwUwMYQ81S7o3J2bxpkww4+8aeZ1VaraQ6pREQRUG+cksuMdUK1P+YpfiHtXjKriQvalFrQYWtQhC0rKhCEIQhCEIQqN52AVmYScJBlrhnB5bx3LOP2etk5VaMd+MH/AIrYoQhYs7OW37yj5v8AlUTtlbYf4lHzf8q3KF5C9lYV2ylsP8Sj5v8AlQNkrX95R83/ACrdIRCJWIbsrax/Eo+b/lV6y3JamCMdLXi75VqUIhErOC6rV6dLzd8qH3RaSCMVLMRq75Vo0L1eLFu2WtJ/iUvN3yrkbJ2n7yl5u+VbZC8heysQdlbXuq0vzfKu27NWwfxqP5vlW0QiESsiLgtn3tL83yqQXJbPvaX5vgtUhEIlZb9yWv72l+b4Lj/D9qkHpaWX4vgtYhEIlZv9z2r7yl+b4JbbNlLTUeXGrSz/ABfKtsheOaHar1ry0yFgjsTaD/Fp/m+VW37K1uibTD6eRxT1uB7lskKPRt4KZrPO9ZSx7O2hgjpKf5vgmN23OWP6Sq8OcOyAMhO/PUp0heim0aBRdUc7UoQhCmoIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEL/9k=" alt="">
+                        </div>
+                        <h6>Mom & Baby</h6>
+                     </div>
+                      
+
+                     <div>
+                       <div>
+                        <img src="https://www.netmeds.com/images/category/665/thumb/devices_1.jpg" alt="">
+                       </div>
+                       <h6>Devices</h6>
+                    </div>
+                    <div>
+                      <div>
+                        <img src="https://www.netmeds.com/images/category/500/thumb/fitness_0.jpg" alt="">
+                      </div>
+                      <h6>Fitness</h6>
+                    </div>   
+                 </div>
+
+
+                  <!---------- Top Brands ----------->
+
+                  <br>
+                  <br>
+                  
+                  <h4 style="margin-left: 50px;">Top Brands</h4>
+                  <br>
+                   <div id="tb">
+                       <div>
+                           <div>
+                               <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/skin-elements.jpg?v=8" alt="">
+                           </div>
+                          <h6>Skin Elements</h6>
+                          <h6 style="color: #5BA41C;">UPTO 50%</h6>
+                       </div>
+                       <div>
+                          <div>
+                              <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=8" alt="">
+                          </div>
+                          <h6>Dr-Vaidyas</h6>
+                          <h6 style="color: #5BA41C;">UPTO 20% OFF</h6>
+                       </div>
+                       <div>
+                          <div>
+                           <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=8" alt="">
+                          </div>
+                          <h6>Dabur</h6>
+                          <h6 style="color: #5BA41C;">UPTO 30%</h6>
+                       </div>
+                       <div>
+                         <div>
+                          <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=8" alt="">
+                         </div>
+                         <h6>Accu-Chek</h6>
+                         <h6 style="color: #5BA41C;">UPTO 25% OFF</h6>
+                      </div>
+                      <div>
+                        <div>
+                          <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/novaherbs.jpg?v=8" alt="">
+                        </div>
+                        <h6>Novaherbs</h6>
+                        <h6 style="color: #5BA41C;">UPTO 20% OFF</h6>
+                      </div>   
+                   </div>
+
+                                                       <!-- -------------MEMBERSHIP ---------------->
+
+                                                       <hr>
+                                                       <br>
+                <div id="mem">
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/netmeds_first_membership.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Netmeds First Membership</h4>
+                        <li>Get special discounts and offers on Netmeds services.</li>
+                        <li>Get 2.5% NMS Cash on all orders.</li>
+                    </div>
+                    <div id="ex">
+                        <div>
+                            <h6 style="color:#EF4281">⚡Starting at ₹299</h6>
+                        </div>
+                        <h6 style=" padding: 12px;margin-left: 15px;color: white;background-color:#32aeb1;border-radius: 8px;height: 50px;">Explore Plans</h6>
+                    </div>
+                </div>
+                                                       <br>
+                                                       <hr>
+  
+                   <!----------- Categories in Focus --------->
+                   <br>
+                   <br>
+                   
+                   <h4 style="margin-left: 50px;">Categories in Focus</h4>
+                   <br>
+                    <div id="cif">
+                        <div>
+                            <div>
+                                <img src="https://www.netmeds.com/images/category/3087/thumb/feminine_hygeine_0.jpg" alt="">
+                            </div>
+                           <h6>Feminine Hygiene</h6>
+                           <h6 style="color: #5BA41C;">UPTO 50% OFF</h6>
+                        </div>
+                        <div>
+                           <div>
+                               <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" alt="">
+                           </div>
+                           <h6>Body Care</h6>
+                           <h6 style="color: #5BA41C;">UPTO 60% OFF</h6>
+                        </div>
+                        <div>
+                           <div>
+                            <img src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg" alt="">
+                           </div>
+                           <h6>Ayurvedic</h6>
+                           <h6 style="color: #5BA41C;">UPTO 76% OFF</h6>
+                        </div>
+                        <div>
+                          <div>
+                           <img src="https://www.netmeds.com/images/category/676/thumb/orthopaedics_0.jpg" alt="">
+                          </div>
+                          <h6>Orthopaedics</h6>
+                          <h6 style="color: #5BA41C;">UPTO 83% OFF</h6>
+                       </div>
+                       <div>
+                         <div>
+                           <img src="https://www.netmeds.com/images/category/3216/thumb/sports_supplements_0.jpg" alt="">
+                         </div>
+                         <h6>Sports Supplements</h6>
+                         <h6 style="color: #5BA41C;">UPTO 60% OFF</h6>
+                       </div>   
+                    </div>
+            
+
+                    <!-- -------------explore beauty ------------------------------->
+                    <br>
+                   <br>
+                   
+                   <h4 style="margin-left: 50px;">Explore Beauty</h4>
+                   <br>
+                    <div id="eb">
+                        <div>
+                            <div>
+                                <img src="https://www.netmeds.com/images/category/3505/thumb/facial_kits_0.jpg" alt="">
+                            </div>
+                           <h6>Facial Kits</h6>
+                        </div>
+                        <div>
+                           <div>
+                               <img src="https://www.netmeds.com/images/category/v1/560/thumb/lip_care_200.jpg" alt="">
+                           </div>
+                           <h6>Lip Care</h6>
+                        </div>
+                        <div>
+                           <div>
+                            <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" alt="">
+                           </div>
+                           <h6>Body Care</h6>
+                        </div>
+                        <div>
+                          <div>
+                           <img src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_0_200.jpg" alt="">
+                          </div>
+                          <h6>Hair Care</h6>
+                       </div> 
+                    </div>
+
+                    <!---------------------- best in beauty -------------------------------------->
+                    <br>
+                   <br>
+                   
+                   <h4 style="margin-left: 50px;">Best in Beauty</h4>
+                   <br>
+                    <div id="eb">
+                        <div>
+                            <div>
+                                <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maybelline.jpg" alt="">
+                            </div>
+                           <h6>Maybelline</h6>
+                        </div>
+                        <div>
+                           <div>
+                               <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/garnier.jpg" alt="">
+                           </div>
+                           <h6>Garnier</h6>
+                        </div>
+                        <div>
+                           <div>
+                            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/myglamm.jpg" alt="">
+                           </div>
+                           <h6>Myglamm</h6>
+                        </div>
+                        <div>
+                          <div>
+                           <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/colorbar.jpg" alt="">
+                          </div>
+                          <h6>Colorbar</h6>
+                       </div>
+                       <div>
+                        <div>
+                            <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/plum.jpg" alt="">
+                        </div>
+                       <h6>Plum</h6>
+                    </div> 
+                    </div>
+
+
+                     <!---------------------- Personal Care -------------------------------------->
+                     <br>
+                     <br>
+                     
+                     <h4 style="margin-left: 50px;">Personal Care</h4>
+                     <br>
+                      <div id="eb">
+                          <div>
+                              <div>
+                                  <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_200.jpg" alt="">
+                              </div>
+                             <h6>Body Care</h6>
+                          </div>
+                          <div>
+                             <div>
+                                 <img src="https://www.netmeds.com/images/category/v1/3085/thumb/mom_baby_1.jpg" alt="">
+                             </div>
+                             <h6>Mom & Baby</h6>
+                          </div>
+                          <div>
+                             <div>
+                              <img src="https://www.netmeds.com/images/category/653/thumb/skin_treatment.jpg" alt="">
+                             </div>
+                             <h6>Skin Treatment</h6>
+                          </div>
+                          <div>
+                            <div>
+                             <img src="https://www.netmeds.com/images/category/3495/thumb/face-wash-cleansers_1.jpg" alt="">
+                            </div>
+                            <h6>Face Wash & Cleansers</h6>
+                         </div>
+                         <div>
+                          <div>
+                              <img src="https://www.netmeds.com/images/category/v1/3566/thumb/shower_gels_body_wash.jpg" alt="">
+                          </div>
+                         <h6>Shower Gels & Body Wash</h6>
+                      </div> 
+                      </div>
+                                  
+
+
+                      <!------------------------- Men's Grooming -------------------------------->
+
+
+                      <br>
+                      <br>
+                      
+                      <h4 style="margin-left: 50px;">Men's Grooming</h4>
+                      <br>
+                       <div id="tb">
+                           <div>
+                               <div>
+                                   <img src="https://www.netmeds.com/images/category/v1/3420/thumb/shaving_200.jpg?v=1" alt="">
+                               </div>
+                              <h6>Shaving </h6>
+                              <h6 style="color: #5BA41C;">UPTO 31% OFF</h6>
+                           </div>
+                           <div>
+                              <div>
+                                  <img src="https://www.netmeds.com/images/category/v1/3002/thumb/razors_cartridges_0.jpg?v=1" alt="">
+                              </div>
+                              <h6>Razors & Cartridges</h6>
+                              <h6 style="color: #5BA41C;">UPTO 46% OFF</h6>
+                           </div>
+                           <div>
+                              <div>
+                               <img src="https://www.netmeds.com/images/category/v1/3591/thumb/beard_oil_200.jpg?v=1" alt="">
+                              </div>
+                              <h6>Beard Oil</h6>
+                              <h6 style="color: #5BA41C;">UPTO 25% OFF</h6>
+                           </div>
+                           <div>
+                             <div>
+                              <img src="https://www.netmeds.com/images/category/v1/3593/thumb/beard_wash_0.jpg?v=1" alt="">
+                             </div>
+                             <h6>Beard Wash</h6>
+                             <h6 style="color: #5BA41C;">UPTO 20% OFF</h6>
+                          </div>
+                          <div>
+                            <div>
+                              <img src="https://www.netmeds.com/images/category/v1/3704/thumb/hair_gels_waxes_200.jpg?v=1" alt="">
+                            </div>
+                            <h6>Hair Gels & Waxes</h6>
+                            <h6 style="color: #5BA41C;">UPTO 23% OFF</h6>
+                          </div>   
+                       </div>
+
+
+
+
+                          <!-- -------------Get medicine refill every month ---------------->
+
+                                                                              <br>
+                                                                              <br>
+                                       <div id="mem">
+                                           <div>
+                                               <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/subscribe_and_schedule.svg" alt="">
+                                           </div>
+                                           <div>
+                                               <h4>Get medicine refill every month</h4>
+                                               <li style="color: grey;">Subscribe and schedule next deliveries</li>
+                                               <li style="color: grey;"> Subscribe for 12 months and get the last month free. *T&C Apply</li>
+                                           </div>
+                                           <div id="ex">
+                                               <div>
+                                                   
+                                               </div>
+                                               <h6 style=" padding: 12px;margin-left: 15px;color: white;background-color:#32aeb1;border-radius: 8px;height: 50px;margin-top: 25px;">Subscribe</h6>
+                                           </div>
+                                       </div>
+                                                                            
+                                                                              <hr>
+
+
+                               <!------------ Health Concerns --------------->
+
+
+                               <br>
+                               <br>
+                               
+                               <h4 style="margin-left: 50px;">Health Concerns</h4>
+                               <br>
+                                <div id="eb">
+                                    <div>
+                                        <div>
+                                            <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/diabetic-care.jpg?v=1" alt="">
+                                        </div>
+                                       <h6>Diabetic Care</h6>
+                                    </div>
+                                    <div>
+                                       <div>
+                                           <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/de-addiction.jpg?v=1" alt="">
+                                       </div>
+                                       <h6>De-Addiction</h6>
+                                    </div>
+                                    <div>
+                                       <div>
+                                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1" alt="">
+                                       </div>
+                                       <h6>Lung Care</h6>
+                                    </div>
+                                    <div>
+                                      <div>
+                                       <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1" alt="">
+                                      </div>
+                                      <h6>Weight Care</h6>
+                                   </div>
+                                   <div>
+                                    <div>
+                                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1" alt="">
+                                    </div>
+                                   <h6>Women'S Care</h6>
+                                </div> 
+                                </div>
+
+       <!----------------- Advice From Health Experts --------------->
+                <br>
+                <br>
+       <h4 style="margin-left: 50px;">Advice From Health Experts </h4>
+                 <br>
+       <div id="afhe">
+           <div>
+               <div>
+                   <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648537442_Screen_features_480.jpg" alt="">
+               </div>
+               <h6>Summer Skincare Guide: 6 Must-To Follow Beauty Reg..</h6>
+               
+           </div>
+           <div>
+            <div>
+                <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648535905_Areata_features_480.jpg" alt="">
+            </div>
+            <h6>What is Alopecia Areata? All You Need TO Know Abou..</h6>
+           </div>
+           <div>
+            <div>
+                <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1648458803_Gluten_features_480.jpg" alt="">
+            </div>
+            <h6>Gluten-Free Diet A Beginner's Guide: For All You..</h6>
+           </div>
+           <div>
+            <div>
+                <img src="https:/www.netmeds.com/images/cms/magefan_blog/nmslite/1648458151_Macroglobulinemia_features_480.jpg" alt="">
+            </div>
+            <h6>Waldenstrom Macroglobulinemia: Causes, Symptoms An..</h6>
+           </div>
+       </div>
+          <br>
+
+
+
+          <div id="para">
+              <h6>
+                Popular Wellness Products: 
+              </h6>
+                <p">
+                    Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm
+
+                </p>
+                <h6>
+                    Popular Wellness Products: 
+                  </h6>
+                    <p>
+                        AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 | Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya Plus    
+                    </p>
+                    <h6>Top-Selling Lab Tests:</h6>
+                    <p> Complete Blood Count (CBC)/Complete Hemogram | LIVER FUNCTION TEST | Blood Glucose Fasting (FBS) | THYROID PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine & Microscopy | Hemoglobin A1C (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal screen-1st Trimester Dual Marker test</p>
+          </div>
+
+
+
+
 
 
 
@@ -198,12 +1217,76 @@
         <div>
             <h5 class="h5">COMPANY</h5>
 
-            <a href="">About Netmeds</a>
+            <p>About Netmeds</p>
+            <p>Customer Speak</p>
+            <p>In the news</p>
+            <p>Career</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Fees and Payments Policy</p>
+            <p>Shipping and Delivery Policy</p>
+            <p>Return, Refund and Cancellation Policy</p>
+            <p>Contact</p>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+            <h5 class="h5">SHOPPING</h5>
+
+            <p>Browse by A-Z</p>
+            <p>Browse by Manufacturers</p>
+            <p>Health Articles</p>
+            <p>Offers / Coupons</p>
+            <p>FAQs</p>
+        </div>
+        <div>
+            <h5 class="h5">SOCIAL</h5>
+
+            <p>Patients Alike</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>LinkedIn</p>
+            <p>Youtube</p>
+            <p>Refer & Earn</p>
+        </div>
+        <div id="or">
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+
+            <div id="news">
+                <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+
+                <input id="inp" type="text" placeholder="Enter your email address">
+                <BUtton><i class="fa-solid fa-arrow-right-long"></i></BUtton>
+                <hr>
+                <div id="in">
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    
+    <hr id="la">
+
+    <div id="as">
+        <div>
+            <p>Medicine</p>
+        </div>
+        <div>
+            <p>Wellness</p>
+        </div>
+        <div>
+            <p>Lab Tests</p>
+        </div>
+        <div>
+            <p>Beauty</p>
+        </div>
+        <div>
+            <p>Copyright© 2022. All Rights Reserved.</p>
+        </div>
+    </div>
 </div>
 
 

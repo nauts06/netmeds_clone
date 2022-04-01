@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f70b78cd27.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./headerCss.css">
+    <style>
+    
+        #actual{
+            display: flex;
+            gap: 20px;
+          background-color: #f3f3f3;
+        }
+        #allProduct{
+            height: auto;
+            width:80%;
+            /* border: solid 1px; */
+            border-radius: 12px;
+            background-color: white;
+         
+            
+        }
+        #left{
+            /* border: solid 1px ; */
+            height: auto;
+            width: 20%;
+            border-radius: 12px;
+            background-color: white;
+        }
+        
+        #con{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 15px 15px;
+            background-color: white;
+            padding: 20px;
+        }
+        #con>div{
+            border-radius: 12px;
+            border: solid 1px grey;
+            padding: 20px;
+            background-color: white;
+        }
+        #con>div>p{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #151b39;
+            margin: 4px 0 5px;
+            font-weight: 700;
+        }
+        #con>div>i{
+            font-size: 12px;
+            font-family: sans-serif;
+            color: grey;
+            
+        }
+        #con>div>s{
+            font-size: 14px;
+            font-family: sans-serif;
+            color: grey;
+        }
+        #CovidEssentials{
+            height: auto;
+            width: auto;
+            border-radius: 12px 12px 0px 0px;
+        }
+        #CovidEssentials>img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        #butt{
+       color: white;
+       background-color:#24aeb1 ;
+       padding:15px 80px 15px 15px;
+       font-size: 14px;
+       font-weight: 700;
+       text-align: center;
+       border: solid 1px white;
+       cursor: pointer;
+       margin-top: 12px;
+    
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="mm">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
+        </div>
+        <div id="input" style="height:28px;">
+            <div>
+                <div id="f">
+                    <p>Deliver to</p>
+                </div>
+                <div  id="first">
+                 <h6>110002
+                     <select id="se">
+                         <option value="">
+                             <p></p>
+                         </option>
+                     </select>
+                 </h6>
+                </div>
+                <div id="last">
+                    
+                </div>
+            </div>
+            <div id="sec">
+             <input placeholder="Search for medicine & wellness products....." type="search">
+            </div>
+        </div>
+ 
+ 
+        
+        <div id="upload" style="margin-top: 18px;">
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-upload" style="font-size:25px;color:white"></i> 
+                 </div>
+                 <div >
+                     <p style="margin:5px;">Upload</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class="fa fa-shopping-cart" style="font-size:25px;color:white"></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Cart</p>
+                 </div>
+             </div>
+ 
+             <div>
+                 <div>
+                     <i class='far fa-address-book' style='font-size:25px;color:white'></i>
+                 </div>
+                 <div>
+                     <p style="margin:5px;">Sign in/ Sign up</p>
+                 </div>
+             </div>
+               
+             
+            
+        </div>
+     </div>
+     <div id="second">
+         <div>
+             <div class="rad">
+                 <i class='fas fa-pills' style='font-size:30px;color:white'></i>
+             </div>
+             <div>
+                 <p>Medicine</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='far fa-hospital' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Wellness</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-bong' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Lab Tests</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-cocktail' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Beauty</p>
+             </div>
+         </div>
+ 
+         <div>
+             <div class="rad">
+                 <i class='fas fa-hospital-alt' style='font-size:25px;color:white'></i>
+             </div>
+             <div>
+                 <p>Health Corner</p>
+             </div>
+         </div>
+     </div>
+               
+     <!-- main
+            -->
+ 
+ 
+                          <!-- navbar -->
+ 
+    <div id="he" style="margin-top:20px;">
+        <div>
+            <a href="covid.html">COVID Essentials</a>
+        </div>
+        <div>
+            <a href="Diabetes.html">Diabetes</a>
+        </div>
+        <div>
+         <a href="Eyewear.html">Eyewear</a>
+        </div>
+        <div>
+           <a href="Ayush.html">Ayush</a>
+        </div>
+        <div>
+             <a href="">Fitness</a>
+        </div>
+        <div>
+               <a href="">Mom & Baby</a>
+        </div>
+        <div>
+              <a href="">Devices</a>
+        </div>
+        <div>
+                <a href="">Surgicals</a>
+        </div>
+        <div>
+               <a href="">Sexual Wellness</a>
+        </div>
+        <div>
+              <a href="">Treatment</a>
+        </div>
+    </div>
+          <!--------********* header *********--------->
+    <div id="actual">
+
+        <!-- left div     -->
+
+        <div id="left" >
+            <div></div>
+        </div>
+
+        <!-- right div -->
+
+       <div id="allProduct">
+           <div id="CovidEssentials">
+               <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1647887481_1000x200.jpg" alt="">
+           </div>
+    
+        <div id="con"></div>
+       </div>
+    </div>
+
+
+        <!-- footer -->
+
+
+        <div id="footer">
+            <div id="infoo">
+                <div id="img">
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+                </div>
+                <div id="text">
+                    <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, with over 100 years’ experience in dispensing quality medicines.</p>
+                </div>
+            </div>
+        
+            <hr id="hr">
+        
+            
+            <div id="one">
+                <div>
+                    <h5 class="h5">COMPANY</h5>
+        
+                    <p>About Netmeds</p>
+                    <p>Customer Speak</p>
+                    <p>In the news</p>
+                    <p>Career</p>
+                    <p>Terms and Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Fees and Payments Policy</p>
+                    <p>Shipping and Delivery Policy</p>
+                    <p>Return, Refund and Cancellation Policy</p>
+                    <p>Contact</p>
+                </div>
+                <div>
+                    <h5 class="h5">SHOPPING</h5>
+        
+                    <p>Browse by A-Z</p>
+                    <p>Browse by Manufacturers</p>
+                    <p>Health Articles</p>
+                    <p>Offers / Coupons</p>
+                    <p>FAQs</p>
+                </div>
+                <div>
+                    <h5 class="h5">SOCIAL</h5>
+        
+                    <p>Patients Alike</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>LinkedIn</p>
+                    <p>Youtube</p>
+                    <p>Refer & Earn</p>
+                </div>
+                <div id="or">
+                    <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+        
+                    <div id="news">
+                        <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+        
+                        <input id="inp" type="text" placeholder="Enter your email address">
+                        <BUtton><i class="fa-solid fa-arrow-right-long"></i></BUtton>
+                        <hr>
+                        <div id="in">
+                            <div>
+                                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <hr id="la">
+        
+            <div id="as">
+                <div>
+                    <p>Medicine</p>
+                </div>
+                <div>
+                    <p>Wellness</p>
+                </div>
+                <div>
+                    <p>Lab Tests</p>
+                </div>
+                <div>
+                    <p>Beauty</p>
+                </div>
+                <div>
+                    <p>Copyright© 2022. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
+
+<script>
+    var oneData=[
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/821307/kapiva_wheat_grass_juice_1_ltr_0_2.jpg",
+           name: "Kapiva Wheat Grass Juice 1 ltr",
+           ii : " * Mkt: Adret Retail Pvt Ltd, (Kapiva)",
+           price: 469.00 ,
+           MRP:499.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/814310/himalaya_wellness_ashvagandha_tablet_60_s_0.jpg",
+           name: "Himalaya Wellness Ashvagandha Tablet 60's",
+           ii : " Mkt: The Himalaya Drug Company",
+           price: 165.00 ,
+           
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/15921/dabur_shilajit_gold_capsule_10s_0_1.jpg",
+           name: "Dabur Shilajit Gold Capsule 10's",
+           ii : " Mkt: Dabur India Ltd",
+           price: 255.00 ,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/15920/dabur_shilajit_gold_capsule_20s_0_1.jpg",
+           name: "Dabur Shilajit Gold Capsule 20's",
+           ii : " Mkt: Dabur India Ltd",
+           price: 455 ,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/15919/dabur_shilajit_capsule_100_s_0.jpg",
+           name: "Dabur Shilajit Capsule 100's",
+           ii : " * Mkt: Dabur India Ltd",
+           price: 500.00,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/15912/dabur_honitus_herbal_cough_remedy_syrup_100_ml_0.jpg",
+           name: "Dabur Honitus Herbal Cough Remedy Syrup 100 ml",
+           ii : " Mkt: Dabur India Ltd",
+           price: 103.95,
+   
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/959720/hashmi_sikander_e_azam_plus_capsule_10s_0_0.jpg",
+           name: "Hashmi Sikander-e-Azam Plus Capsule 10's",
+           ii : "  Mkt: Hashmi Unani Pharmacy",
+           price: 1286.00,
+       },
+       {
+           img : "https://www.netmeds.com/images/product-v1/150x150/986166/dr_vaidyas_shilajit_gold_capsule_30s_0_0.jpg",
+           name: "Dr.Vaidya's Herbo 24 Turbo Male Power Oil (Pack of 2 x 25 ml)",
+           ii : " Mkt: Herbolab India Pvt Ltd",
+           price: 652.75,
+         
+       },
+   ]
+   
+   
+   oneData.map(function(elem){
+       var box = document.createElement("div")
+       var image = document.createElement("img")
+       image.src=elem.img
+       var title = document.createElement("p")
+       title.innerText =elem.name
+       var tit = document.createElement("i")
+       tit.innerText =elem.ii
+       var pr = document.createElement("p")
+       pr.style.color="grey"
+       pr.innerText="Best price* Rs."+ +elem.price
+       var mr = document.createElement("s")
+       mr.innerText="MRP Rs."+ +elem.MRP
+       mr.style.textDecoration=" line-through"
+       
+       var bo = document.createElement("div")
+       var bt = document.createElement("button")
+       bt.innerText="ADD TO CART"
+       bt.id="butt"
+       
+       bo.append(bt)
+
+       
+
+   
+   
+   
+       box.append(image,title,tit,pr,mr,bo)
+       document.getElementById("con").append(box)
+   
+   
+   })
+   
+   </script>
